@@ -110,6 +110,18 @@ function checkJackpot() {
         allBoxes[4].textContent = '👊🤪';
         allBoxes[6].textContent = '👊🤪';
         result(currentPlayer);
+    } else if (
+        allBoxes[0].textContent != '' &&
+        allBoxes[1].textContent != '' &&
+        allBoxes[2].textContent != '' &&
+        allBoxes[3].textContent != '' &&
+        allBoxes[4].textContent != '' &&
+        allBoxes[5].textContent != '' &&
+        allBoxes[6].textContent != '' &&
+        allBoxes[7].textContent != '' &&
+        allBoxes[8].textContent != ''
+    ) {
+        alert('How unexpected..');
     }
 }
 
@@ -139,7 +151,6 @@ function result(player) {
             document.querySelector('.display').classList.add('twoWon');
         }
     }
-    // console.log('Hello World');
 
     const allBoxes = document.querySelectorAll('.box');
     for (let i = 0; i < allBoxes.length; i++) {
