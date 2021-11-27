@@ -122,6 +122,7 @@ function checkJackpot() {
         allBoxes[8].textContent != ''
     ) {
         alert('How unexpected..');
+        document.querySelector('.display').innerHTML = `It's a draw.`;
     }
 }
 
@@ -135,7 +136,7 @@ function result(player) {
         } else {
             document.querySelector(
                 '.display'
-            ).innerHTML = `Player One "X" is the winner!`;
+            ).innerHTML = `Player "X" is the winner!`;
             document.querySelector('.display').classList.add('oneWon');
         }
     } else if (player === playerTwo) {
@@ -147,7 +148,7 @@ function result(player) {
         } else {
             document.querySelector(
                 '.display'
-            ).innerHTML = `Player Two "O" is the winner!`;
+            ).innerHTML = `Player "O" is the winner!`;
             document.querySelector('.display').classList.add('twoWon');
         }
     }
