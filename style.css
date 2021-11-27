@@ -9,13 +9,22 @@
 }
 .display {
     display: grid;
+    margin: 0 auto;
     padding: 20px;
+    width: 60vw;
     text-align: center;
     border: 2px solid black;
     margin-block-start: 20px;
     margin-block-end: 50px;
     font-size: x-large;
+    background-color: white;
+}
+.display.oneWon {
     background-color: #a45c7b;
+}
+.display.twoWon {
+    background-color: black;
+    color: white;
 }
 button {
     outline: none;
@@ -36,10 +45,11 @@ button:hover {
 
 .boxes {
     display: grid;
+    margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    width: 100vw;
-    height: 90vh;
+    width: 80vw;
+    height: 80vh;
 }
 
 .box {
@@ -47,10 +57,11 @@ button:hover {
     text-align: center;
     border: 2px solid black;
     color: rgba(222, 222, 222, 0.726);
-    font-size: 5rem;
+    font-size: 3rem;
 }
 .box:hover {
     cursor: pointer;
+    background-color: white;
 }
 
 #box0,
