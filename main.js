@@ -1,8 +1,8 @@
 const playerOne = 'X';
 const playerTwo = 'O';
 let currentPlayer = playerOne;
-let yourName1 = prompt('You are the player one! What is your name?');
-let yourName2 = prompt('You are the player two! What is your name?');
+let yourName1 = prompt('You are the player "X"! What is your name?');
+let yourName2 = prompt('You are the player "O"! What is your name?');
 
 const jackpot = document.querySelector('.boxes');
 
