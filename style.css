@@ -48,16 +48,16 @@ button:hover {
     margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    width: 80vw;
-    height: 80vh;
+    width: 60vw;
+    height: 60vh;
 }
 
 .box {
-    padding: 70px;
+    padding: 50px;
     text-align: center;
     border: 2px solid black;
     color: rgba(222, 222, 222, 0.726);
-    font-size: 3rem;
+    font-size: 50px;
 }
 .box:hover {
     cursor: pointer;
